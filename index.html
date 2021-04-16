@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FormBigliettoTreno</title>
+</head>
+<body>
+ 
+<h1>Calcola il prezzo del tuo biglietto</h1>
+<div>
+    <form id="myForm" action="">
+
+        <label>label</label><br>
+        <input type="text" id="nomeUser" name="uName" placeholder="Nome e cognome"><br>
+        <label>label</label><br>
+        <input type="text" id="kmUser" name="uKm" placeholder="km che farai"><br>
+        <label>label</label><br>
+
+        <select id="ageUser" name="uAge">
+            <option value="sconto40">Più di 64 anni</option>
+            <option value="sconto20">Minorenne</option>
+            <option value="sconto0">Altro</option>
+        </select>
+        <br>
+        <button>Invia</button>
+        <button >Annulla</button>
+    </form> 
+</div>
+
+
+    <script src="myScript.js"></script>
+</body>
+</html>
