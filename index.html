@@ -8,29 +8,72 @@
     <title>FormBigliettoTreno</title>
 </head>
 <body>
- 
-<h1>Calcola il prezzo del tuo biglietto</h1>
-<div>
-    <form id="myForm" action="">
+<div class="main">
 
-        <label>label</label><br>
-        <input type="text" id="nomeUser" name="uName" placeholder="Nome e cognome"><br>
-        <label>label</label><br>
-        <input type="text" id="kmUser" name="uKm" placeholder="km che farai"><br>
-        <label>label</label><br>
+    <div>
+        <h1 class="row">Calcola il prezzo del tuo biglietto</h1>
+        <div class="mainbox">              
+            <form id="myForm" action="">
+                    <div class="box">
+                        <label>Nome Cognome</label><br>
+                        <input type="text" id="nomeUser" name="uName" placeholder="Nome e cognome">
+                    </div>
 
-        <select id="ageUser" name="uAge">
-            <option value="sconto40">Più di 64 anni</option>
-            <option value="sconto20">Minorenne</option>
-            <option value="sconto0">Altro</option>
-        </select>
-        <br>
-        <button>Invia</button>
-        <button >Annulla</button>
-    </form> 
+                    <div class="box">
+                        <label>Km da percorrere</label><br>
+                    <input type="text" id="kmUser" name="uKm" placeholder="km che farai">
+                     </div>
+
+                    <div class="box">
+                        <label>Fascia d'età</label><br>
+                        <select id="ageUser" name="uAge">
+                            <option value="sconto40">Più di 64 anni</option>
+                            <option value="sconto20">Minorenne</option>
+                            <option value="sconto0">Altro</option>
+                        </select>
+                     </div>
+                    <div class="row">
+                        <button>Genera</button>
+                        <button>Annulla</button>
+                     </div>      
+            </form>
+        </div>
+    </div>
+    <div>
+        <h1 class="row">Il tuo biglietto</h1>
+        <div class="white">
+            <h3>Dettaglio passeggeri</h3>
+            <hr>
+                <div class="mainbox">
+                    
+                    <div class="gray">
+                        <h3>Nome passeggero</h3>
+                        <h3 id="stampaNome"></h3>
+                    </div>
+                    <div class="col">
+                        <h3>Offerta</h3>
+                        <h3 id="stampaOfferta"></h3>
+                    </div>
+                    <div class="col">
+                        <h3>Carrozza</h3>
+                        <h3 id="stampaCarr"></h3>
+                    </div>
+                    <div class="col">
+                        <h3>Codice CP</h3>
+                        <h3 id="stampaCode"></h3>
+                    </div>
+                    <div class="col">
+                        <h3>Costo biglietto</h3>
+                        <h3 id="stampaPrezzo"></h3>
+                    </div>
+                </div>
+            <hr>
+        </div>
+    </div>
+
+
+
 </div>
-
-
-    <script src="myScript.js"></script>
+    <script src="myScriptForm.js"></script>
 </body>
 </html>
