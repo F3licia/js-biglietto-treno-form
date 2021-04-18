@@ -9,10 +9,9 @@
 </head>
 <body>
 <div class="main">
-
     <div>
-        <h1 class="row">Calcola il prezzo del tuo biglietto</h1>
-        <div class="mainbox">              
+        <h1 class="center">Calcola il prezzo del tuo biglietto</h1>
+        <div class="mainbox shadow">              
             <form id="myForm" action="">
                     <div class="box">
                         <label>Nome Cognome</label><br>
@@ -32,7 +31,7 @@
                             <option value="sconto0">Altro</option>
                         </select>
                      </div>
-                    <div class="row">
+                    <div class="center">
                         <button>Genera</button>
                         <button onClick="refreshPage()">Annulla</button>
                      </div>      
@@ -40,37 +39,37 @@
         </div>
     </div>
     <div>
-        <h1 class="row">Il tuo biglietto</h1>
+        <h1 class="center">Il tuo biglietto</h1>
         <div class="white">
-            <h3>Dettaglio passeggeri</h3>
+            <h3>DETTAGLIO PASSEGGERI</h3>
             <hr>
                 <div class="mainbox">
                     
                     <div class="gray">
-                        <h3>Nome passeggero</h3>
-                        <h3 id="stampaNome"></h3>
+                        <h4>NOME PASSEGGERO</h4>
+                        <h4 id="stampaNome"></h4>
                     </div>
                     <div class="col">
                         <h3>Offerta</h3>
-                        <h3 id="stampaOfferta"></h3>
+                        <p id="stampaOfferta"></p>
                     </div>
                     <div class="col">
-                        <h3>Carrozza</h3>
-                        <h3 id="stampaCarr"></h3>
+                        <h4>Carrozza</h4>
+                        <p id="stampaCarr"></p>
                     </div>
                     <div class="col">
-                        <h3>Codice CP</h3>
-                        <h3 id="stampaCode"></h3>
+                        <h4>Codice CP</h4>
+                        <p id="stampaCode"></p>
                     </div>
                     <div class="col">
-                        <h3>Costo biglietto</h3>
-                        <h3 id="stampaPrezzo"></h3>
+                        <h4>Costo biglietto</h4>
+                        <p id="stampaPrezzo"></p>
                     </div>
                 </div>
             <hr>
         </div>
     </div>
-
+<h2 id="saluto">Buon viaggio!</h2>
 
 
 </div>

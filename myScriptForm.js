@@ -64,15 +64,18 @@ function onWindowLoad() {
     var finalPrice
     var finalPrice = discount(ageUser, prezzoDefault);
 
-    console.log(finalPrice.toFixed(2));
+//★-Stampo le informazioni elaborate-★  
+if( isNaN(kmUser)){
+    document.getElementById("stampaPrezzo").innerHTML = "errore";      
+}else{
+    document.getElementById("stampaPrezzo").innerHTML = finalPrice.toFixed(2) + "&#8364; ";
+}
+console.log(finalPrice.toFixed(2));
 
-//★-Stampo le informazioni elaborate-★
 document.getElementById("stampaNome").innerHTML = nomeUser;
 document.getElementById("stampaCarr").innerHTML = carriage;
 document.getElementById("stampaCode").innerHTML = codeCp;
-document.getElementById("stampaPrezzo").innerHTML = finalPrice.toFixed(2) + "&#8364; ";
 
  })
 }
-
 
