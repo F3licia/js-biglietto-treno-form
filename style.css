@@ -1,125 +1,129 @@
 *{  padding: 0;
-    margin: 0%;
-    box-sizing: border-box;
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body{background-color: #b91450;}
 h1{
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-size: 20px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .main{
-    
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 650px;
-    color:white;
+  
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 650px;
+  color:white;
 }
 
 .mainbox div{
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .white{
-    background-color: white;
-    color: black;
-    padding: 20px 10px;
+  background-color: white;
+  color: black;
+  padding: 20px 10px;
 }
 
 .mainbox{ 
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    border-radius: 10px;  
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;  
 }
 
 .shadow{ 
-   box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 16px 0 rgba(0,0,0,0.2);
+ box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 16px 0 rgba(0,0,0,0.2);
 }
 
-    .box{
-        width: 200px;
-        text-align: center;
-        color: black;
-        display: inline-block;
-    }
-    .col{
-        width: calc(100% / 5);
-        height: 150px;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px;
-    }
+  .box{
+      width: 200px;
+      text-align: center;
+      color: black;
+      display: inline-block;
+  }
+  .col{
+      width: calc(100% / 5);
+      height: 150px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 10px;
+  }
 
-    .center{
-        text-align: center;
-    }
-        input, select {
-            border: 1px solid #b91450;
-            border-radius: 5px;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        label{
-            color: #b91450;
-            font-weight: bold;
-            
-        }
-        button{
-            color: #b91450;
-            font-weight: bolder;
-            padding: 3px 5px;
-            border-radius: 5px;
-            background-color: lightgray;
-        }
+  .center{
+      text-align: center;
+  }
+      input, select {
+          border: 1px solid #b91450;
+          border-radius: 5px;
+          padding: 5px;
+          margin-top: 5px;
+      }
+      label{
+          color: #b91450;
+          font-weight: bold;
+          
+      }
+      button{
+          color: #b91450;
+          font-weight: bolder;
+          padding: 3px 5px;
+          border-radius: 5px;
+          background-color: lightgray;
+      }
 
-        .gray{
-            background-color: gray;
-            color: black;
-            padding: 10px;
-        }
+      .gray{
+          background-color: gray;
+          color: black;
+          padding: 10px;
+      }
 
 #saluto{
-    display: none;
-    color: white;
-    margin: 10px;
-    text-align: left;
-    opacity: 0%;
-    animation-duration: 0.5s; 
-    animation: 
-    nudge 5s linear,
-    pulse 3s linear;
+  color: white;
+  margin: 10px;
+  text-align: left;
+  opacity: 0%;
+  animation-duration: 2s; 
 }
-    @keyframes nudge {
-        0% {
-          transform: translate( 100px, 0);
+
+
+
+
+.animated{
+  animation: 
+  nudge 5s normal,
+  pulse 3s normal;
+}
+  @keyframes nudge {
+      0% {
+        transform: translate( 0px, 0);
+      }
+      
+      50%, 100%{
+        transform: translate(90%, 0);
+      }
+  }
+
+  @keyframes pulse {
+      0%{
+          opacity: 100%;
         }
-        
-        50%, 100%{
-          transform: translate(100%, 0);
+        50% {
+          opacity: 100%;
         }
-    }
-
-    @keyframes pulse {
-        0%{
-            opacity: 100%;
-          }
-          50% {
-            opacity: 100%;
-          }
-          80% {
-            opacity: 0%;
-          }
-        
-    }
-
-
+        80% {
+          opacity: 0%;
+        }
+      
+  }
+}
